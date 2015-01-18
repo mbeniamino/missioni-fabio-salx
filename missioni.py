@@ -26,11 +26,11 @@ print """
         * {font-family: 'Coda', cursive; background-color: #000000;}
         .titolo {color: #00ffff;font-size: 200%%;}
         .autore {color: #00ff00;font-size: 200%%;}
-        .descrizione {color: #007777;font-size: 200%%;}
+        .descrizione {color: #00aaaa;font-size: 200%%;}
         .bottom {color: #ffffff;}
-        .res {color: #3333ff;}
+        .res {color: #4488ff;}
         .enl {color: #00ff00;}
-        a:link {color: #5555ff;}
+        a:link {color: #4488ff;}
 
     .bottom { position: absolute; bottom: 0;}
         </style>
