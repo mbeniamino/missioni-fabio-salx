@@ -13,7 +13,7 @@ Verbo ::= "Approaching" ;
 Cosa ::= l'arte | la cultura;
 
 Descrizione ::=Soggetto[DoveD][Motivo[e Motivo]][Come]["("^Appunto^")"]^"."|----"Una citta`" AggettivoCitta[e AggettivoCitta]^".";
-Soggetto ::="Un semplice percorso" | "Breve giro" | "Un giro [esterno]" | "Un percorso" | "Pigra camminata per la citta`" | "Una gita" [AggetivoGita] | "Ancora altre vedute" [non] famose | "Angoli inaspettati" | "Un nuovo modo di scoprire la citta`" | "Una scampagnata" | "Un salto veloce" | "L'immancabile gita" | "Un viaggio" | "Una passeggiata" [AggetivoGita] | "Alcuni punti di interesse" | "Alcuni interessanti scorci d'arte" | "Una nuova avventura" | "Altre immancabili passeggiate" | "Un lieve girovagare";
+Soggetto ::="Un semplice percorso" | "Breve giro" | "Un giro" [esterno] | "Un percorso" | "Pigra camminata per la citta`" | "Una gita" [AggetivoGita] | "Ancora altre vedute" [non] famose | "Angoli inaspettati" | "Un nuovo modo di scoprire la citta`" | "Una scampagnata" | "Un salto veloce" | "L'immancabile gita" | "Un viaggio" | "Una passeggiata" [AggetivoGita] | "Alcuni punti di interesse" | "Alcuni interessanti scorci d'arte" | "Una nuova avventura" | "Altre immancabili passeggiate" | "Un lieve girovagare";
 AggetivoGita ::= veloce | tranquilla ;
 AggettivoCitta ::= onirica | eterea | che non smetta mai di affascinare ;
 Motivo ::= "per conoscere una delle piu` belle citta` del mondo" | "per conoscere le bellezze della citta`" | "per godere di qualche scorcio piacevole" | "per conoscere le strade" | "perche` la citta e le sue bellezze sono di tutti";
