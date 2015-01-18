@@ -8,3 +8,6 @@ cgi in Python 2 che può essere messo su un server web per pubblicare il
 generatore di missioni: per funzionare necessita che nella dir che contiene
 la grammatica venga copiato l'eseguibile di polygen e che questo possa
 essere eseguito dal server web.
+
+Il risultato finale è pubblicato qui:
+http://www.tautologica.org/missioni+fabio-salx
