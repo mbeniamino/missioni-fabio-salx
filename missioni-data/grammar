@@ -2,7 +2,7 @@
 S ::= Titolo"\n"^Descrizione"\n" ;
 I ::= "Generatore di missioni di NoTAVernello";
 
-Titolo ::= Citta Aggettivo [e Aggettivo] ["("^Mezzo^")"] ["("^Posto[","Posto...]^")"]| Citta [zona] Dove | Citta Posto | Citta da Posto a Posto | Citta e' | Verbo Citta | "Indovinelli" a Citta | Citta | Citta^":" Cosa[^","Cosa] [e Cosa...];
+Titolo ::= Citta Aggettivo [e Aggettivo] ["("^Mezzo^")"] ["("^Posto[","Posto...]^")"]| Citta [zona] Dove | Citta Posto | Citta da Posto a Posto | Citta e' | Verbo Citta | "Indovinelli" a Citta | Citta | Citta^":" Cosa[^","Cosa] [e Cosa...] | Citta "Approaching";
 Mezzo ::= a piedi | in macchina | in auto ;
 Aggettivo ::= casuale | senza impegno | d'autore | antica | diversa | che non credi | come la vorremmo | che non puoi mancare | d'arte | periferia | eterea | per tutti ;
 Citta ::= "Vigevano" | "Cassolnovo" | "Parona" | "Mortara" | "Gravellona" | "Frazione Piccolini" | "Abbiategrasso" | "Cilavegna" ;
@@ -13,10 +13,10 @@ Verbo ::= "Approaching" ;
 Cosa ::= l'arte | la cultura;
 
 Descrizione ::=Soggetto[DoveD][Motivo[e Motivo]][Come]["("^Appunto^")"]^"."|----"Una citta`" AggettivoCitta[e AggettivoCitta]^".";
-Soggetto ::="Un semplice percorso" | "Breve giro" | "Un giro" | "Un percorso" | "Pigra camminata per la citta`" | "Una gita" [AggetivoGita] | "Ancora altre vedute" [non] famose | "Angoli inaspettati" | "Un nuovo modo di scoprire la citta`";
+Soggetto ::="Un semplice percorso" | "Breve giro" | "Un giro" | "Un percorso" | "Pigra camminata per la citta`" | "Una gita" [AggetivoGita] | "Ancora altre vedute" [non] famose | "Angoli inaspettati" | "Un nuovo modo di scoprire la citta`" | "Una scampagnata" | "Un salto veloce" | "L'immancabile gita" | "Un viaggio" | "Una passeggiata" [AggetivoGita] | "Alcuni punti di interesse" | "Alcuni interessanti scorci d'arte" | "Una nuova avventura" | "Altre immancabili passeggiate";
 AggetivoGita ::= veloce | tranquilla ;
 AggettivoCitta ::= onirica | eterea | che non smetta mai di affascinare ;
 Motivo ::= "per conoscere una delle piu` belle citta` del mondo" | "per conoscere le bellezze della citta`" | "per godere di qualche scorcio piacevole" | "per conoscere le strade" ;
 Appunto ::="sperando che non piova" | "il percorso puo` essere fatto in macchina o a piedi" | "data l'ubicazione di alcuni portali si consiglia l'utilizzo della macchina" |"da" (fare|eseguire) "in auto";
-DoveD ::= "in posti"[non]"famosi" ;
-Come ::= "con occhi diversi, ma sempre affascinanti" ;
+DoveD ::= "in posti"[non]"famosi" | "nella bella cittadina" [lomellina] | "in terra lomellina" | "per le strade di questa piacevole cittadina" | "nel centro storico di questo ridente borgo" | "nelle lande lomelline" | "in questi bellissimi luoghi";
+Come ::= "con occhi diversi, ma sempre affascinanti" | "con una tappa per mangiare" | "alla scoperta di tesori nascosti" | "inseguendo la storia e il mistero" | "a piedi" | "in macchina";
