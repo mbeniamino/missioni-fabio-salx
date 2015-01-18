@@ -27,6 +27,11 @@ print """
         .titolo {color: #00ffff;font-size: 200%%;}
         .autore {color: #00ff00;font-size: 200%%;}
         .descrizione {color: #007777;font-size: 200%%;}
+        .bottom {color: #ffffff;}
+        .res {color: #3333ff;}
+        .enl {color: #00ff00;}
+        a:link {color: #5555ff;}
+
     .bottom { position: absolute; bottom: 0;}
         </style>
     </head>
@@ -34,7 +39,7 @@ print """
         <div class="titolo"><h1>%s</h1></div>
         <div class="autore"><p>NoTAVernello<p></div>
         <div class="descrizione"><p>%s</p></div>
-    <div class="bottom"><a href="javascript:location.reload()">Un altro!</a></div>
+    <div class="bottom"><p>Disclaimer: progetto goliardico improvvisato da <span class="res">@benim</span> per donare un po' di buon umore ai player della zona. <span class="enl">@NoTAVernello</span> e` del tutto estraneo alla pagina, se non per aver fornito l'ispirazione con le sue numerose missioni. <a href="javascript:location.reload()">Per vederne un altro clicca qui o ricarica la pagina!</a></p></div>
     </body>
 </html>
 """ % (titolo,descrizione)
