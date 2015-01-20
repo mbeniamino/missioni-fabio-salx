@@ -4,7 +4,7 @@ I ::= "Generatore di missioni di NoTAVernello";
 
 Titolo ::= Citta Aggettivo [e Aggettivo] ["("^Mezzo^")"] ["("^Posto[","Posto...]^")"]| Citta [zona] Dove | Citta Posto | Citta da Posto a Posto | Citta e' | [Prefisso] Citta | "Indovinelli" a Citta | Citta | Citta^":" Cosa[^","Cosa] [e Cosa...] | Citta "Approaching";
 Mezzo ::= a piedi | in macchina | in auto ;
-Aggettivo ::= casuale | senza impegno | d'autore | antica | diversa | che non credi | come la vorremmo | che non puoi mancare | d'arte | periferia | eterea | per tutti | impetuosa | annosa | nella nebbia | di un tempo andato | remota;
+Aggettivo ::= casuale | senza impegno | d'autore | antica | diversa | che non credi | come la vorremmo | che non puoi mancare | d'arte | periferia | eterea | per tutti | impetuosa | annosa | nella nebbia | di un tempo andato | remota | tenue | scoperta | indistinta | crepuscolare | irosa | fioca | sussurrata | rigogliosa | evanescente | collerica;
 Citta ::= "Vigevano" | "Cassolnovo" | "Parona" | "Mortara" | "Gravellona" | "Frazione Piccolini" | "Abbiategrasso" | "Cilavegna" ;
 Dove ::= in circonvallazione | Cardinale | "altri scorci";
 Cardinale ::= nord | nordest | est | sudest | sud | sudovest | ovest | nordovest | occidentale | orientale | settentrionale | meridionale ;
@@ -12,13 +12,18 @@ Posto ::= "Piazza" | "Stazione" | "Frati" | "Centro" ;
 Prefisso ::= "Approaching" | "Non la solita";
 Cosa ::= l'arte | la cultura;
 
-Descrizione ::=Soggetto[DoveD][Motivo[e Motivo]][Come]["("^Appunto^")"]^"."|----"Una citta`" AggettivoCitta[e AggettivoCitta]^"."|----DescrizioneSpot^".";
-Soggetto ::="Un semplice percorso" | "Breve giro" | "Un giro" [esterno] | "Un percorso" | "Pigra camminata per la citta`" | "Una gita" [AggetivoGita] | "Ancora altre vedute" [non] famose | "Angoli inaspettati" | "Un nuovo modo di scoprire la citta`" | "Una scampagnata" | "Un salto veloce" | "L'immancabile gita" | "Un viaggio" | "Una passeggiata" [AggetivoGita] | "Alcuni punti di interesse" | "Alcuni interessanti scorci d'arte" | "Una nuova avventura" | "Altre immancabili passeggiate" | "Un lieve girovagare" | "Un" [tiepido] "ricordo di antichi fasti" [che tornano per rallegrarci]| "Un dolceamaro vagare";
+Descrizione ::=Soggetto[DoveD][Motivo[e Motivo]][Come]["("^Appunto^")"]^"."|----"Una citta`" AggettivoCitta[e AggettivoCitta]^"."|----DescrizioneSpot^"."|--SoggettoDue [DelPosto] [DoveD]^".";
+
+SoggettoDue ::= "Un florilegio di belta`" | "La vivace anima" | "I ricordi persi ma mai dimenticati" ;
+
+Soggetto ::="Un" [semplice] percorso | "Breve giro" | "Un giro" [esterno] | "Pigra camminata per la citta`" | "Una gita" [AggetivoGita] | "Ancora altre vedute" [non] famose | "Angoli inaspettati" | "Un nuovo modo di scoprire la citta`" | "Una scampagnata" | "Un salto veloce" | "L'immancabile gita" | "Un viaggio" | "Una passeggiata" [AggetivoGita] | "Alcuni punti di interesse" | "Alcuni interessanti scorci d'arte" | "Una nuova avventura" | "Altre immancabili passeggiate" | "Un lieve girovagare" | "Un" [tiepido] ricordo Specificazione | "Un dolceamaro vagare" | "Approdi rigeneranti" | "Un delicato" [ma importante] "vagolare" | "Una gentile esplorazione" Specificazione | "Un lento incedere" | "Una visione forte" DelPosto;
+Specificazione ::= "degli amichevoli vicoli" DelPosto | di antichi fasti [che tornano per rallegrarci] | di tesori nascosti;
+DelPosto ::= "di una citta` sempre splendida" |  "della citta`" | "di questa accogliente cittadina" | "di una bella cittadina che sapra` sempre emozionare" | "di una citta` amata, ma non sempre facile" | di questo ridente borgo | della splendida cittadina | della terra lomellina | della cittadina tanto amata | di questa piacevole cittadina;
 AggetivoGita ::= veloce | tranquilla ;
 AggettivoCitta ::= onirica | eterea | che non smetta mai di affascinare ;
-Motivo ::= "per conoscere una delle piu` belle citta` del mondo" | "per conoscere le bellezze della citta`" | "per godere di qualche scorcio piacevole" | "per conoscere le strade" | "perche` la citta e le sue bellezze sono di tutti";
+Motivo ::= "per conoscere una delle piu` belle citta` del mondo" | "per conoscere le bellezze" DelPosto | per godere di qualche scorcio piacevole | per conoscere le strade | "perche` la citta` e le sue bellezze sono di tutti" | per scoprire celate [ma gioiose] bellezze lomelline;
 Appunto ::="sperando che non piova" | "il percorso puo` essere fatto in macchina o a piedi" | "data l'ubicazione di alcuni portali si consiglia l'utilizzo della macchina" |"da" (fare|eseguire) "in auto" | "restare in centro per non perdersi potrebbe essere d'aiuto";
-DoveD ::= "in posti"[non]"famosi" | "nella bella cittadina" [lomellina] | "in terra lomellina" | "per le strade di questa piacevole cittadina" | "nel centro storico di questo ridente borgo" | "nelle lande lomelline" | "in questi bellissimi luoghi" | "tra le vie della splendida cittadina" | "nelle memorie della terra lomellina";
-Come ::= "con occhi diversi, ma sempre affascinanti" | "con una tappa per mangiare" | "alla scoperta di tesori nascosti" | "inseguendo la storia e il mistero" | "a piedi" | "in macchina";
-DescrizioneSpot ::= "Per chi ama la citta`" ["e il suo" [storico] [indomito] "spirito"] | "I ricordi persi ma mai dimenticati di una citta` sempre splendida" | "Quello che non sapevi ti sorprende" [maggiormente];
+DoveD ::= in posti [non] famosi | nella bella cittadina [lomellina] | in terra lomellina | per le strade DelPosto | nel centro storico DelPosto | nelle lande lomelline | in questi bellissimi luoghi | tra le vie DelPosto | nelle memorie DelPosto | in luoghi mai dimenticati | nelle vie DelPosto | in mezzo ai bei negozi locali | in queste memorabili lande lomelline;
+Come ::= "con occhi diversi, ma sempre affascinanti" | con una tappa per mangiare | alla scoperta Specificazione | inseguendo la storia e il mistero | a piedi | in macchina;
+DescrizioneSpot ::= "Per chi ama la citta`" ["e il suo" [storico] [indomito] "spirito"] | "Quello che non sapevi ti sorprende" [maggiormente] | "Camminando e trovandosi, d'un tratto, davanti a spettacolari bellezze" | "...il naufragar m'e` dolce in questo mare" | "Senza fretta o paura di perdersi" DoveD;
 
