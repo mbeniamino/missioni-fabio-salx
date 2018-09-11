@@ -1,6 +1,9 @@
-
 S ::= Titolo"\n"^Descrizione"\n" ;
-I ::= "Generatore di missioni di NoTAVernello";
+I ::=   "title:    Generatore di missioni di NoTAVernello\n"
+      ^ "language: italian\n"
+      ^ "status:   beta\n"
+      ^ "topic:    misc\n"
+      ^ "audience: anybody\n" ;
 
 Titolo ::= Citta Aggettivo [e Aggettivo] ["("^Mezzo^")"] ["("^Posto[","Posto...]^")"]| Citta [zona] Dove | Citta Posto | Citta da Posto a Posto | Citta e' | [Prefisso] Citta | "Indovinelli" a Citta | Citta | Citta^":" Cosa[^","Cosa] [e Cosa...] | Citta Suffisso;
 Mezzo ::= a piedi | in macchina | in auto ;
